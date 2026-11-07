@@ -1,0 +1,38 @@
+sources:
+    - name: demo_src
+      description: Данные из БД авиаперелетов
+      tables:
+        - name: aircrafts
+          description: Модели Самолетов
+          columns:
+            - name: aircraft_code
+              descriotion: Код модели самолета
+              tests:
+                - not_null
+                - unique
+            - name: model
+              descriotion: Название модели самолета
+            - name: range
+              descriotion: Неизвестное поле
+        - name: airports
+          description: Аэропорты
+          columns:
+            - name: airport_code
+              descriotion: Код аэропорта
+            - name: airport_name
+              descriotion: Имя аэропорта
+            - name: city
+              descriotion: Город
+            - name: coordinates
+              descriotion: Координаты
+            - name: Таймзона
+              descriotion: Неизвестное поле
+        - name: seats
+          description: Места в самолетах
+          columns:
+            - name: aircraft_code
+              descriotion: Код модели самолета
+            - name: seat_no
+              descriotion: Номер места
+            - name: fare_conditions
+              descriotion: Класс места
