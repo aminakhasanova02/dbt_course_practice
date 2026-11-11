@@ -36,3 +36,9 @@ sources:
               descriotion: Номер места
             - name: fare_conditions
               descriotion: Класс места
+        - name: bookings
+          description: Места в самолетах
+          columns:
+            - name: book_ref
+            - name: book_date
+            - name: total_amount
