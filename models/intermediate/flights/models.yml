@@ -1,0 +1,16 @@
+models:
+  - name: s_abon_shops
+    description: Сателит хаба организация - торговая точка
+    columns:
+      - name: abonent_id
+      - name: inn
+      - name: kpp
+      - name: shop_address
+      - name: shop_name
+  - name: fct_bookings
+    columns:
+      - name: book_ref
+      - name: book_datetime
+      - name: total_amount
+      - name: status
+      - name: book_date

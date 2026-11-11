@@ -1,0 +1,7 @@
+sources:
+    - name: public
+      tables:
+        - name: organizations
+          desctription: Торговые точки
+        - name: abonents
+          description: Организации
